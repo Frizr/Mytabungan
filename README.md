@@ -29,28 +29,16 @@ tabungan_online/
 └── melos.yaml         # Konfigurasi Melos Workspace
 ```
 
-## Panduan Instalasi dan Menjalankan Proyek
+## Alur Penggunaan Aplikasi
 
-1. **Persiapan (Prerequisites):**
-   - Pastikan Flutter SDK sudah terinstal.
-   - Install `melos` secara global: `dart pub global activate melos`
-   - Pastikan Anda sudah mengatur konfigurasi Firebase untuk project ini (`google-services.json` / `GoogleService-Info.plist` di dalam folder frontend).
+1. **Halaman Utama (Dashboard):**
+   Saat membuka aplikasi, pengguna akan langsung disajikan dengan **Total Saldo** yang dimiliki secara *real-time*. Saldo ini dikalkulasikan otomatis dari seluruh riwayat pemasukan dan pengeluaran.
+   
+2. **Menyembunyikan Saldo:**
+   Terdapat ikon "mata" pada kartu saldo utama. Jika pengguna sedang berada di tempat umum, pengguna bisa mengetuk ikon tersebut untuk menyensor tampilan saldo.
 
-2. **Clone Repository:**
-   ```bash
-   git clone https://github.com/USERNAME/tabungan_online.git
-   cd tabungan_online
-   ```
+3. **Mencatat Transaksi Baru:**
+   Pengguna dapat menekan tombol tambah (`+`) untuk mencatat uang masuk atau uang keluar yang baru. Cukup masukkan nominal dan keterangan transaksi, lalu simpan.
 
-3. **Install Dependensi:**
-   Jalankan perintah ini di root folder untuk mengunduh semua package dan menghubungkan antar modul:
-   ```bash
-   melos bootstrap
-   ```
-
-4. **Jalankan Aplikasi:**
-   Pindah ke direktori frontend dan jalankan:
-   ```bash
-   cd frontend
-   flutter run
-   ```
+4. **Memantau Riwayat:**
+   Di bagian bawah layar, terdapat daftar riwayat transaksi terakhir yang mencantumkan detail setiap transaksi (tanggal, nominal, dan jenis pemasukannya). Data ini ditarik langsung dari *database* (Firestore) sehingga tidak akan hilang.
