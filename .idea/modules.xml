@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<module fileurl="file://$PROJECT_DIR$/melos_tabungan_online.iml" filepath="$PROJECT_DIR$/melos_tabungan_online.iml"/>
+      <module fileurl="file://$PROJECT_DIR$/tabungan_frontend.iml" filepath="$PROJECT_DIR$/tabungan_frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/tabungan_frontend_android.iml" filepath="$PROJECT_DIR$/android/tabungan_frontend_android.iml" />
     </modules>
   </component>
 </project>
