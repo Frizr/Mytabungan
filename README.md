@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/logo.jpg" alt="MyTabungan Logo" width="120" height="120" style="border-radius: 24px;" />
+  <img src="assets/images/logo.png" alt="MyTabungan Logo" width="120" height="120" style="border-radius: 24px;" />
 </p>
 
 <h1 align="center">MyTabungan</h1>
